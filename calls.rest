@@ -1,0 +1,29 @@
+### Get all
+GET http://localhost:3000/api/employees
+
+### Get single
+GET http://localhost:3000/api/employees/2
+
+### Create new
+POST http://localhost:3000/api/employees
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Andreas",
+    "birthdate": "2000-01-19",
+    "hourlySalary": 10000
+}
+
+### Update
+PUT http://localhost:3000/api/employees/5
+Content-Type: application/json; charset=utf-8
+
+{
+    "name": "Andreas",
+    "birthdate": "2000-01-19",
+    "hourlySalary": 1000000000000
+}
+
+### Delete
+DELETE http://localhost:3000/api/employees/5
+Content-Type: application/json; charset=utf-8
